@@ -1,10 +1,10 @@
 === Wordfence Login Security ===
 Contributors: wfryan, wfmattr, mmaunder, wfmatt
 Tags: security, login security, 2fa, two factor authentication, captcha, xml-rpc, mfa, 2 factor
-Requires at least: 4.5
-Requires PHP: 5.5
-Tested up to: 6.4
-Stable tag: 1.1.10
+Requires at least: 4.7
+Requires PHP: 7.0
+Tested up to: 6.7
+Stable tag: 1.1.14
 
 Secure your website with Wordfence Login Security, providing two-factor authentication, login and registration CAPTCHA, and XML-RPC protection.
 
@@ -57,6 +57,16 @@ Secure your website with Wordfence Login Security.
 3. Configuration options include XML-RPC protection and login page CAPTCHA.
 
 == Changelog ==
+
+= 1.1.14 - January 2, 2025 =
+* Improvement: General compatibility improvements and better error handling for PHP 8+
+
+= 1.1.12 - June 6, 2024 =
+* Change: Revised the formatting of TOTP app URLs to prioritize the site's own URL for better sorting and display
+* Fix: Fixed the last captcha column in the users page so it no longer displays "(not required)" on 2FA users since that no longer applies
+
+= 1.1.11 - April 3, 2024 =
+* Fix: Revised the behavior of the reCAPTCHA verification to use the documented expiration period of the token and response to avoid sending verification requests too frequently, which could artificially lower scores in some circumstances
 
 = 1.1.10 - March 11, 2024 =
 * Change: Removed the extra site link from the CAPTCHA verification email message to avoid confusion with the verify link
